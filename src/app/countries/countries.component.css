@@ -1,0 +1,12 @@
+abbr{
+    cursor: pointer;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s;
+}
+img:hover{
+transform: scale(1.05);    
+}

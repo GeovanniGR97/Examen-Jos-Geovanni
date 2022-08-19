@@ -1,0 +1,32 @@
+<h1>Países</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-12"></div>
+  </div>
+</div>
+<table class="table table-hover table-bordered table-sm">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Region</th>
+      <th scope="col">Bandera</th>
+      <th scope="col">Moneda</th>
+      <th scope="col">Mapa</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let countrie of countries">
+    <tr>
+      <th scope="row">5</th>
+      <td>{{ countrie.nombre }}</td>
+      <td>{{ countrie.region }}</td>
+      <td><img src="{{ countrie.bandera }}" width="125px" alt="bandera" /></td>
+      <td>{{ countrie.moneda | json }}</td>
+      <td>
+        <a href="{{ countrie.mapa }}" target="_blank"
+          ><abbr title="Delimitacion del mapa">Mapa</abbr></a
+        >
+      </td>
+    </tr>
+  </tbody>
+</table>
